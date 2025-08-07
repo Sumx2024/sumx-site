@@ -2,62 +2,88 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SUMX - Soluções Inteligentes</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Consultoria estratégica, financeira e de inovação.">
+  <title>SUMX Consultoria</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="logo-nova.png" alt="Logo da SUMX" class="logo"/>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="navbar">
+    <div class="logo">SUMX</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="inicio" class="hero">
-    <div class="container">
-      <h1>Transformamos tecnologia em soluções inteligentes</h1>
-      <p>Automatize processos, ganhe eficiência e tome decisões com base em dados.</p>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Transformando Estratégias em Resultados</h1>
+      <p>Consultoria empresarial em estratégia, finanças e inovação.</p>
+      <a href="#contato" class="btn">Fale Conosco</a>
     </div>
   </section>
 
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre a SUMX</h2>
-      <p>Somos uma empresa especializada em automação, dados e desenvolvimento de sistemas personalizados. Nosso foco é entregar resultados reais através da tecnologia.</p>
+  <section id="sobre" class="section">
+    <h2>Sobre a SUMX</h2>
+    <p>Somos uma consultoria especializada em impulsionar o crescimento sustentável de empresas por meio de estratégias personalizadas, soluções financeiras inteligentes e inovação.</p>
+    <ul>
+      <li><strong>Missão:</strong> Gerar valor real para nossos clientes.</li>
+      <li><strong>Visão:</strong> Ser referência em consultoria estratégica no Brasil.</li>
+      <li><strong>Valores:</strong> Ética, excelência, inovação e compromisso.</li>
+    </ul>
+  </section>
+
+  <section id="servicos" class="section">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Consultoria Estratégica</h3>
+        <p>Planejamento e execução para crescimento, reposicionamento e competitividade.</p>
+      </div>
+      <div class="card">
+        <h3>Finanças Corporativas</h3>
+        <p>Análise financeira, valuation, controle de custos e estruturação financeira.</p>
+      </div>
+      <div class="card">
+        <h3>Inovação & Tecnologia</h3>
+        <p>Transformação digital, cultura de inovação e novos modelos de negócio.</p>
+      </div>
     </div>
   </section>
 
-  <section id="servicos" class="destaque">
-    <div class="container">
-      <h2>O que fazemos</h2>
-      <ul>
-        <li>🔹 Desenvolvimento de sistemas sob medida</li>
-        <li>🔹 Automação de tarefas e processos</li>
-        <li>🔹 Dashboards e Business Intelligence</li>
-        <li>🔹 Consultoria e estratégia de dados</li>
-      </ul>
-    </div>
+  <section id="cases" class="section">
+    <h2>Cases de Sucesso</h2>
+    <p>Veja como ajudamos empresas a se transformarem e crescerem de forma consistente.</p>
   </section>
 
-  <section id="contato">
-    <div class="container">
-      <h2>Contato</h2>
-      <p>Entre em contato com a gente: <a href="mailto:contato@sumx.com.br">contato@sumx.com.br</a></p>
-    </div>
+  <section id="blog" class="section">
+    <h2>Blog e Insights</h2>
+    <p>Artigos sobre estratégia, finanças e inovação.</p>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <form class="form">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Email: contato@sumx.com.br | WhatsApp: (11) 99999-9999</p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 SUMX. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 SUMX Consultoria. Todos os direitos reservados.</p>
+    <a href="#home" class="top-link">↑ Voltar ao topo</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
