@@ -1,3 +1,11 @@
+:root {
+  --azul-escuro: #002B49;
+  --azul-medio: #004D80;
+  --cinza-claro: #f2f2f2;
+  --branco: #ffffff;
+  --texto: #dddddd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +14,21 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: var(--azul-escuro);
+  color: var(--texto);
   line-height: 1.6;
-  background-color: #ffffff;
-  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 header {
-  background-color: #003153;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  background-color: var(--azul-escuro);
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
 }
 
 .logo {
@@ -28,62 +38,81 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 nav a {
-  color: white;
+  color: var(--branco);
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: var(--azul-medio);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero {
-  background-color: #f4f6f8;
-  padding: 80px 20px;
+  background-color: var(--azul-medio);
+  padding: 100px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  color: #003153;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
+  color: var(--branco);
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--cinza-claro);
 }
 
 .section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 80px 20px;
 }
 
 .section h2 {
-  color: #003153;
+  font-size: 2rem;
+  color: var(--branco);
   margin-bottom: 20px;
+}
+
+.section p, .section ul {
+  font-size: 1rem;
+  color: var(--texto);
 }
 
 .section ul {
   list-style-type: disc;
   padding-left: 20px;
-  color: #444;
 }
 
-.section a {
-  color: #003153;
-  text-decoration: underline;
+.section.alt {
+  background-color: #001f36;
 }
 
 footer {
-  background-color: #003153;
-  color: white;
+  background-color: #001423;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 30px 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--branco);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--azul-medio);
 }
